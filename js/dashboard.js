@@ -8,9 +8,9 @@ if (sessionStorage.getItem('isLogin') === 'true' && sessionStorage.getItem('isAd
     location.href = 'login.html';
 }   
 
-var less18 = document.getElementById('less18');
+var lesseight = document.getElementById('less18');
 var is1850 = document.getElementById('is1850');
-var gt50 = document.getElementById('gt50');
+var gtfifty = document.getElementById('gt50');
 
 function logout(){
     
@@ -22,7 +22,7 @@ userCount();
 function userCount(){
     var users = JSON.parse(localStorage.getItem('UserDetails'));
     var less18 = 0;
-    var is1815 = 0;
+    var is1850 = 0;
     var gt50 = 0;
     for(var i=0;i<users.length;i++){
         if(parseInt(users[i].age)<18){
@@ -35,9 +35,9 @@ function userCount(){
             gt50+=1;
         }
     }
-    less18.innerHTML = less18 + ' Users';
+    lesseight.innerHTML = less18 + ' Users';
     is1850.innerHTML = is1815 + ' Users';
-    gt50.innerHTML = gt50 + ' Users';
+    gtfifty.innerHTML = gt50 + ' Users';
 
 
 }

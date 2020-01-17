@@ -1,4 +1,4 @@
-if (!sessionStorage.getItem('isLogin') === 'true' && sessionStorage.getItem('isAdmin') === 'true') {
+if (!(sessionStorage.getItem('isLogin') === 'true' && sessionStorage.getItem('isAdmin') === 'true')) {
     location.href = 'login.html';
 }   
 
