@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <form name="registrationForm" class="form">
+            <div class="container">
+                <div class="row" >
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Name" id="name" name="uName">
+                    </div>
+                </div>
+
+                <div class="row" >
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Email" name="email">
+                    </div>
+                </div>
+
+                <div class="row" >
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Password" name="password">
+                    </div>
+                </div>
+
+                <div class="row" >
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Confirm Password" name="confirmPassword">
+                    </div>
+                </div>
+                
+                <div class="row" >
+                    <div class="col-md-3">
+                      <select name="selectCity" id="selectCity" class="form-control">
+                          <option value="default" selected>--Select City--</option>
+                          <option value="Rajkot">Rajkot</option>
+                          <option value="Ahemdabad">Ahemdabad</option>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <select name="selectState" class="form-control" id="selectState">
+                            <option value="default" selected>--Select State--</option>
+                            <option value="Gujrat">Gujrat</option>
+                            <option value="Rajshthan">Rajshthan</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label><input type="checkbox" class="form-control" name="chTerms" id="chTerms">
+                        Terms & Conditions</label>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="button" class="form-control btn btn-primary" value="REGISTER" name="btnRegister">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </body>
+    <script src="js/register.js"></script>
+</html>

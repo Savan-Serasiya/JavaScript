@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h2>
+            Dashboard
+        </h2>
+
+        <div class="col-md-3">
+            <h4 id="adminName">Welcome, </h4>
+            <ul>
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="user.html">Users</a>
+                </li>
+                <li>
+                    <a href="loginSession.html">Login Session</a>
+                </li>
+                <li>
+                    <a onclick="logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+
+                        <div class="card-body">
+                        <h4>User &lt; 18 years</h4>
+                        <h3 id="less18"></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>18-50 years users</h4>
+                            <h3 id="is1850"></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Users &gt; 50 Years</h4>
+                            <h3 id="gt50"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="js/dashboard.js"></script>
+
+</html>

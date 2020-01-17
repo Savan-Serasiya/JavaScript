@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Users
+        </h1>
+        <div class="col-md-3">
+            <h4 id="adminName">Welcome, </h4>
+            <ul>
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="user.html">Users</a>
+                </li>
+                <li>
+                    <a href="loginSession.html">Login Session</a>
+                </li>
+                <li>
+                    <a onclick="logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <h2>User  Login</h2>
+            
+            <table border="2">
+                <thead>
+                    <th>Name</th>
+                    <th>Login Time</th>
+                    <th>Logout Time</th>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="js/loginsession.js"></script>
+
+</html>
